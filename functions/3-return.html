@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <script>
+
+            const result1 = sum(2, 3)
+            const result2 = sum(3, 2)
+
+            function sum(number1, number2) {
+                console.log(number1 + number2)
+                const total = number1 + number2
+                return total
+            }
+
+            console.log(result1 + result2)
+
+
+
+
+
+
+            // Example 1
+
+            // function composeBookingDetails(fullName, date, cost, category = 'ESTÁNDAR') {
+            //     const details = `Reserva confirmada para ${fullName}: habitación ${category} para el día ${date} (${cost}€ total)`
+            //     return details
+            // }
+
+            // const booking1 = composeBookingDetails('Germán Álvarez', '10/10/21', 627)
+            // const booking2 = composeBookingDetails('Lali Osorio', '10/10/21', 1200, 'VISTAMAR')
+
+            // console.log(booking1)
+            // console.log(booking2)
+            // document.write(booking2)
+
+
+
+
+
+
+
+
+
+            // Example 2 
+
+            function isMultiple(val1, val2) {
+                const rest = val1 % val2
+                const result = (rest === 0)
+                return result
+            }
+
+            const result = isMultiple(4, 2)
+            const text = `¿Son 4 y 2 múltiplos? ${result}`
+            console.log(text)
+
+
+
+
+
+
+
+
+
+
+
+            // Example 3 
+            function calculateTotalPrice(subtotal, taxPercent) {
+
+                if (typeof subtotal != 'number' || typeof taxPercent != 'number') {
+                    return 'VALORES NO VÁLIDOS' //early return
+                }
+
+                const theTaxPart = subtotal * taxPercent / 100
+                const finalResut = subtotal + theTaxPart
+                return finalResut
+
+                console.log('Estoy debajo del return y no llegaré a mostrarme nunca')
+            }
+
+            const price = calculateTotalPrice(50, 7)
+            console.log(`El resultado que será enviado a la BBDD es ${price}€`)
+
+
+
+        </script>
+    </body>
+
+</html>

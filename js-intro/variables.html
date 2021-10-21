@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <script>
+
+            // VARIABLES 
+
+
+
+
+            let doggy               // declaration
+
+            console.log('El valor de una variable no inicializada es', doggy)
+
+            doggy = 'Popino'        // initialization
+
+            console.log('EY! Ha llegado el perro influencer:', doggy, 'y la variable es de tipo', typeof doggy)
+
+            doggy = false
+
+            console.log('El tipado dinámico permite cambiar los tipos al aire', doggy, 'y la variable es de tipo', typeof doggy)
+
+
+
+
+
+            // TYPEOF
+
+            let age = 35
+
+            let typeOfAGe = typeof age
+
+            console.log(typeOfAGe)
+
+
+
+
+            // CONST DECLARATION 
+
+            const city = 'Gijón'
+
+            console.log('La ciudad es', city)
+
+            let name = "teo"
+            
+            
+            // VARIABLE SCOPE
+            
+            let globalVar = 'Soy una variable global y estoy disponible en cualquier punto del script'
+            
+            function whatever() {
+                let name = "paco"
+                let localVar = 'Soy una variable local y estoy disponible sólo en la función'
+
+                console.log('La global desde la función:', globalVar)
+                console.log('La local desde la función:', localVar)
+            }
+
+            whatever()
+
+
+            console.log('La global desde la función:', globalVar)
+            console.log('La local desde la función:', localVar)
+
+
+        </script>
+    </body>
+
+</html>

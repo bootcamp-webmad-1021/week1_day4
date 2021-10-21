@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <script>
+
+            // Function parameters
+            function sayHi(name, lastName) {
+                console.log(`¡Hola, ${name} ${lastName}!`)
+            }
+
+            // Function arguments
+            sayHi('Enrique', 'Vozmediano')
+            sayHi('Kevin', 'Santana')
+            sayHi("Laura", "de Cos")
+
+
+
+
+
+            // Example 
+            function showBookingDetails(fullName, date, cost, category = "ESTANDAR") {
+                const details = `Reserva confirmada para ${fullName}: habitación ${category} para el día ${date} (${cost}€ total)`
+                console.log(details)
+            }
+
+
+
+            showBookingDetails('Germán Álvarez', '10/10/21')
+            showBookingDetails('Lali Osorio', '10/10/21', 'DELUXE')
+
+        </script>
+    </body>
+
+</html>
